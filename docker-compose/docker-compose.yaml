@@ -1,31 +1,45 @@
 version: '3'
 
+networks:
+  aulasexta:
+
 services:
   nginx:
-   build: ../nginx/
-   ports:
-     - "80:80"
+    build: ../nginx/
+    ports:
+      - "80:80"
+    networks:
+      - aulasexta
 
   match-number:
     restart: always
     build: ../match-number/
     ports:
-      - "5000:5000"
+      - "5000"
 
     container_name: match-number
+
+    networks:
+      - aulasexta
   
   match-text:
     restart: always
     build: ../match-text/
     ports:
-      - "5001:5000"
+      - "5000"
 
     container_name: match-text
+
+    networks:
+      - aulasexta
 
   find-number:
     restart: always
     build: ../find-number/
     ports:
-      - "5002:5000"
+      - "5000"
 
     container_name: find-number
+
+    networks:
+      - aulasexta
