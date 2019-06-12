@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  match-number:
+    restart: always
+    build: ../match-number/
+    ports:
+      - "5000:5000"
+
+    container_name: match-number
+  
+  match-text:
+    restart: always
+    build: ../match-text/
+    ports:
+      - "5001:5000"
+
+    container_name: match-text
+
+  find-number:
+    restart: always
+    build: ../find-number/
+    ports:
+      - "5002:5000"
+
+    container_name: find-number
