@@ -1,6 +1,11 @@
 version: '3'
 
 services:
+  nginx:
+   build: ../nginx/
+   ports:
+     - "80:80"
+
   match-number:
     restart: always
     build: ../match-number/
