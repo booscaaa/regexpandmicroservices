@@ -15,5 +15,6 @@ func (t Texto) MatchNumber() []byte {
 		t.Texto,
 		match,
 	}
+
 	return retorno.GetRetorno()
 }
