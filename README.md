@@ -23,17 +23,20 @@ $ docker-compose up --build -d
 # Requestes com POSTMAN!
 
 ```javascript
-URL: http://localhost/v1/texto/match-text   POST
+METHOD: POST
+URL: http://localhost/v1/texto/match-text
 {
     "texto": "<seu texto>" 
 }
 
-URL: http://localhost/v1/texto/match-number   POST
+METHOD: POST
+URL: http://localhost/v1/texto/match-number   
 {
     "texto": "<seu texto>" 
 }
 
-URL: http://localhost/v1/texto/find-number   POST
+METHOD: POST 
+URL: http://localhost/v1/texto/find-number   
 {
     "texto": "<seu texto>" 
 }
