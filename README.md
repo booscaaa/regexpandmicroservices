@@ -14,7 +14,7 @@ $ sudo chmod +x /usr/local/bin/docker-compose
 $ git clone https://github.com/ViniciusBoscardin/regexpandmicroservices.git
 $ cd <pasta da aplicacao>
 $ cd docker-compose
-$ cd docker-compose up --build -d
+$ docker-compose up --build -d
 ```
 
 # Requestes com POSTMAN!
