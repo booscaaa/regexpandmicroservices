@@ -6,7 +6,7 @@ networks:
 services:
   nginx:
     build: ../nginx/
-    image: nginx:1.0
+    image: boscaa/nginx
     ports:
       - "80:80"
     networks:
@@ -15,7 +15,7 @@ services:
   match-number:
     restart: always
     build: ../match-number/
-    image: match-number:1.0
+    image: boscaa/match-number
     ports:
       - "5000"
 
@@ -27,7 +27,7 @@ services:
   match-text:
     restart: always
     build: ../match-text/
-    image: match-text:1.0
+    image: boscaa/match-text
     ports:
       - "5000"
 
@@ -39,7 +39,7 @@ services:
   find-number:
     restart: always
     build: ../find-number/
-    image: find-text:1.0
+    image: boscaa/find-text
     ports:
       - "5000"
 
