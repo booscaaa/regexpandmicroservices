@@ -6,6 +6,7 @@ networks:
 services:
   nginx:
     build: ../nginx/
+    image: nginx:1.0
     ports:
       - "80:80"
     networks:
@@ -14,6 +15,7 @@ services:
   match-number:
     restart: always
     build: ../match-number/
+    image: match-number:1.0
     ports:
       - "5000"
 
@@ -25,6 +27,7 @@ services:
   match-text:
     restart: always
     build: ../match-text/
+    image: match-text:1.0
     ports:
       - "5000"
 
@@ -36,6 +39,7 @@ services:
   find-number:
     restart: always
     build: ../find-number/
+    image: find-text:1.0
     ports:
       - "5000"
 
