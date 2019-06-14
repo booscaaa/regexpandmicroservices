@@ -8,6 +8,8 @@ $ sudo curl -L https://github.com/docker/compose/releases/download/1.17.0/docker
 $ sudo chmod +x /usr/local/bin/docker-compose
 ```
 
+
+
 # Rodando o código local!
 
 ```sh
@@ -16,6 +18,7 @@ $ cd <pasta da aplicacao>
 $ cd docker-compose
 $ docker-compose up --build -d
 ```
+
 
 # Requestes com POSTMAN!
 
@@ -34,4 +37,11 @@ URL: http://localhost/v1/texto/find-number   POST
 {
     "texto": "<seu texto>" 
 }
+```
+
+
+#  Link do DockerHub
+
+```
+https://hub.docker.com/u/boscaa
 ```
