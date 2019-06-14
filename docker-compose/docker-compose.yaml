@@ -19,7 +19,7 @@ services:
     build: ../match-number/
     image: boscaa/match-number
     deploy:
-      replicas: 1
+      replicas: 3
     ports:
       - "5000"
 
@@ -33,7 +33,7 @@ services:
     build: ../match-text/
     image: boscaa/match-text
     deploy:
-      replicas: 1
+      replicas: 2
     ports:
       - "5000"
 
@@ -47,7 +47,7 @@ services:
     build: ../find-number/
     image: boscaa/find-text
     deploy:
-      replicas: 1
+      replicas: 4
     ports:
       - "5000"
 
