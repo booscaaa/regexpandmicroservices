@@ -9,6 +9,8 @@ services:
     image: boscaa/nginx
     ports:
       - "80:80"
+    deploy:
+      replicas: 1
     networks:
       - aulasexta
 
@@ -16,6 +18,8 @@ services:
     restart: always
     build: ../match-number/
     image: boscaa/match-number
+    deploy:
+      replicas: 1
     ports:
       - "5000"
 
@@ -28,6 +32,8 @@ services:
     restart: always
     build: ../match-text/
     image: boscaa/match-text
+    deploy:
+      replicas: 1
     ports:
       - "5000"
 
@@ -40,6 +46,8 @@ services:
     restart: always
     build: ../find-number/
     image: boscaa/find-text
+    deploy:
+      replicas: 1
     ports:
       - "5000"
 
@@ -50,6 +58,8 @@ services:
 
   viz:
     image: dockersamples/visualizer
+    deploy:
+      replicas: 1
     ports:
       - 8080:8080
     volumes:
